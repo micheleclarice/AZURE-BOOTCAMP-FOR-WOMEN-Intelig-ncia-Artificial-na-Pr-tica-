@@ -1,0 +1,56 @@
+####################################################################################
+#
+#    Speech to Text and Classification with Cognitive Services, Cognitive Search
+#    and Azure Storage
+#    2/18/2021
+#
+#    Microsoft
+# 
+####################################################################################
+#
+#   Cognitive Services - Language Understanding (LUIS)
+# 
+####################################################################################
+luis_authoring:
+  auth_name: luis-michelesantana
+  auth_key: daa111b80930496fb2a20b9fdfb5b17a
+  auth_region: westus
+luis_app:
+  app_id: b09bfa08-3a15-45f6-92eb-339d2b1c5b4f
+  app_name: luis-seguradora
+  app_desc: Luis app built with LUIS Python SDK.
+  app_version: 0.1
+  app_locale: pt-br 
+  
+####################################################################################
+#
+#    Azure Storage - Blob
+# 
+####################################################################################
+azure_storage:
+  container_name_audios: audios
+  container_name_transcricoes: transcricoes
+  storage_name: storagemichelesantana
+  conn_string: DefaultEndpointsProtocol=https;AccountName=storagemichelesantana;AccountKey=VLQiC/x8Jo/tw3SAuYkRfxk9ykunwNJdVQSPi7LX/tRj7BOoyEZAtpDtCpzue3ervnaY5SmUygoR+ASt66g8XA==;EndpointSuffix=core.windows.net
+  sas_token: '?sv=2021-06-08&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2022-10-10T22:05:30Z&st=2022-09-17T14:05:30Z&spr=https&sig=QeTjk9sgpgv0uEzDu%2By5ByQNsnDg5ZsAWEg65VV3rlM%3D'
+
+####################################################################################
+#
+#    Cognitive Services - Speech
+# 
+####################################################################################
+speech:
+  speech_key: f1941c9e84054715acc171019f150266
+  speech_region: eastus2
+  speech_language: pt-br
+
+####################################################################################
+#
+#    Cognitive Search
+# 
+####################################################################################
+search:
+  service_name: search-michelesantana
+  admin_key: iYKjzm6e9adVoJSFWfbkcaXlDtmajNIHD7W4DZa8UbAzSeAVcYaI
+  index_name: audios-rnv
+  api_version: '?api-version=2020-06-30'
